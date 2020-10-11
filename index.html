@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script>
+      $(document).ready(function () {
+        $("#hamburger").click(function () {
+          $("#nav-list").toggle("#nav-list");
+        });
+      });
+      </script>
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <navbar class="nav">
+      <div class="brand">
+        <img src="imgs/logo.png" alt="" class="logo" />
+      </div>
+        <div class="phn-div">
+        <p class="phn"><i class="fa fa-phone" aria-hidden="true"></i>
+           (+100)-234-3728</p>
+        <p class="phn"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+           2903 Avenue Z, Brooklyn, NY</p>
+        <p class="phn"> <i class="fa fa-envelope-o" aria-hidden="true"></i>
+           info@houseq.com</p>
+      </div>
+      <div class="social-icons">
+        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+      </div>
+      <div class="hamburger">
+        <input type="checkbox" name="toggle" id="toggle" class="toggle">
+        <label for="toggle" class="toggle-cursor" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-items"><a href="#" class="nav-links">Home</a></li>
+        <li class="nav-items"><a href="#" class="nav-links">Properties</a></li>
+        <li class="nav-items"><a href="#" class="nav-links">Contact</a></li>
+        <li class="nav-items"><a href="#" class="nav-links">Pages</a></li>
+        <li class="nav-items"><a href="#" class="nav-links">About Us</a></li>
+      </ul>
+    </navbar>
+
+    <!-- property filter -->
+<div class="filter-wrapper">
+    <div class="card-property">
+      <div class="property-row">
+        <select name="property" id="select-property" class="select-property">
+          <option value="0" selected disabled>Property Type</option>
+          <option value="1">Office</option>
+          <option value="2">House</option>
+          <option value="3">Apartment</option>
+        </select>
+
+        <select name="property" id="select-property" class="select-property">
+          <option value="0" selected disabled>Property Status</option>
+          <option value="1">For Sale</option>
+          <option value="2">For Rent</option>
+          <option value="3">Open House</option>
+          <option value="4">No Fees</option>
+          <option value="5">Best Offers</option>
+        </select>
+
+        <input type="text" placeholder="Price From" class="price" />
+        <input type="text" placeholder="Price To" class="price" />
+      </div>
+      <div class="buttons-property">
+        <button class="btn clear">Clear</button>
+        <button class="btn advance">Advanced</button>
+        <button class="btn search">Search</button>
+      </div>
+    </div>
+  </div>
+    <!-- Hotels div -->
+    <div class="hotels-div">
+      <div class="hotel-items">
+        <img src="imgs/1-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Modern and quirky flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 611 w 180th St,
+            New York, NY, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/2-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Centrally located office</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>1052 W 91st St,
+            Los Angeles, CA 90044, USA
+          </p>
+          <p class="hotel-price">$6,400</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/3-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Comfortable family house</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>3rd Ave & James
+            St, Seattle, WA 98104, USA
+          </p>
+          <p class="hotel-price">$2,550,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/4-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Spacious and warm flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            55 W Jackson Blvd, Chicago, IL 60604, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotels-div">
+      <div class="hotel-items">
+        <img src="imgs/1-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Modern and quirky flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 611 w 180th St,
+            New York, NY, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/2-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Centrally located office</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>1052 W 91st St,
+            Los Angeles, CA 90044, USA
+          </p>
+          <p class="hotel-price">$6,400</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/3-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Comfortable family house</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>3rd Ave & James
+            St, Seattle, WA 98104, USA
+          </p>
+          <p class="hotel-price">$2,550,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/4-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Spacious and warm flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            55 W Jackson Blvd, Chicago, IL 60604, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our mission -->
+    <div class="mission-main">
+      <h1 class="mission-heading">Our Mission</h1>
+      <div class="mission-section">
+        <div class="mission-info">
+          <div class="mission-content">
+            <i class="large material-icons">border_color</i>
+            <h3 class="mission-content-heading">Save Money</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              dolor magnam, facilis voluptas quia excepturi provident
+              cupiditate.
+            </p>
+          </div>
+          <div class="mission-content">
+            <i class="large material-icons">announcement</i>
+            <h3 class="mission-content-heading">Better Ideas</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              dolor magnam, facilis voluptas quia excepturi provident
+              cupiditate.
+            </p>
+          </div>
+          <div class="mission-content">
+            <i class="large material-icons">person_add</i>
+            <h3 class="mission-content-heading">Collaboration</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              dolor magnam, facilis voluptas quia excepturi provident
+              cupiditate.
+            </p>
+          </div>
+          <div class="mission-content">
+            <i class="large material-icons">phonelink</i>
+            <h3 class="mission-content-heading">Easy To Find</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              dolor magnam, facilis voluptas quia excepturi provident
+              cupiditate.
+            </p>
+          </div>
+        </div>
+        <div class="mission-image"></div>
+      </div>
+    </div>
+
+    <!-- Hotels div -->
+    <div class="hotels-div">
+      <div class="hotel-items">
+        <img src="imgs/1-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Modern and quirky flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 611 w 180th St,
+            New York, NY, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/2-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Centrally located office</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>1052 W 91st St,
+            Los Angeles, CA 90044, USA
+          </p>
+          <p class="hotel-price">$6,400</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/3-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Comfortable family house</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>3rd Ave & James
+            St, Seattle, WA 98104, USA
+          </p>
+          <p class="hotel-price">$2,550,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/4-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Spacious and warm flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            55 W Jackson Blvd, Chicago, IL 60604, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hotels-div">
+      <div class="hotel-items">
+        <img src="imgs/1-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Modern and quirky flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 611 w 180th St,
+            New York, NY, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/2-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Centrally located office</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>1052 W 91st St,
+            Los Angeles, CA 90044, USA
+          </p>
+          <p class="hotel-price">$6,400</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/3-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Comfortable family house</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>3rd Ave & James
+            St, Seattle, WA 98104, USA
+          </p>
+          <p class="hotel-price">$2,550,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="hotel-items">
+        <img src="imgs/4-medium.jpg" alt="" class="hotel-image" />
+        <div class="hotel-info">
+          <p class="hotel-name">Spacious and warm flat</p>
+          <p class="hotel-location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            55 W Jackson Blvd, Chicago, IL 60604, USA
+          </p>
+          <p class="hotel-price">$1,300,000</p>
+          <div class="hotel-features">
+            <p class="features-hotel">Property Size</p>
+            <p class="features-hotel">Bedrooms</p>
+            <p class="features-hotel">Bathrooms</p>
+            <p class="features-hotel">Garages</p>
+            <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+            <p class="features-hotel-2 f-2">2</p>
+            <p class="features-hotel-2 f-3">2</p>
+            <p class="features-hotel-2 f-4">1</p>
+          </div>
+
+          <div class="hotel-button-date">
+            <p class="date-hotel">
+              <i class="fa fa-calendar" aria-hidden="true"></i> 12 August, 2020
+            </p>
+            <button class="btn hotel-button">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Services -->
+    <div class="services-div">
+      <h1 class="services-heading">Our Services</h1>
+      <div class="services-info">
+        <div class="services-card">
+          <i class="large material-icons">map</i>
+          <h1 class="services-card-heading">
+            Find places anywhere in the world
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            vestibulum egestas nunc sed ultricies.
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="large material-icons">face</i>
+          <h1 class="services-card-heading">We have agents with experience</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            vestibulum egestas nunc sed ultricies.
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="large material-icons">home</i>
+          <h1 class="services-card-heading">
+            Buy or rent beautiful properties
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            vestibulum egestas nunc sed ultricies.
+          </p>
+        </div>
+        <div class="services-card">
+          <i class="large material-icons">menu</i>
+          <h1 class="services-card-heading">
+            With agent account you can list properties
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            vestibulum egestas nunc sed ultricies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="featured-hotels">
+      <h1 class="mission-heading center">Featured Properties</h1>
+      <div class="hotels-div">
+        <div class="hotel-items">
+          <img src="imgs/1-medium.jpg" alt="" class="hotel-image" />
+          <div class="hotel-info">
+            <p class="hotel-name">Modern and quirky flat</p>
+            <p class="hotel-location">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 611 w 180th
+              St, New York, NY, USA
+            </p>
+            <p class="hotel-price">$1,300,000</p>
+            <div class="hotel-features">
+              <p class="features-hotel">Property Size</p>
+              <p class="features-hotel">Bedrooms</p>
+              <p class="features-hotel">Bathrooms</p>
+              <p class="features-hotel">Garages</p>
+              <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+              <p class="features-hotel-2 f-2">2</p>
+              <p class="features-hotel-2 f-3">2</p>
+              <p class="features-hotel-2 f-4">1</p>
+            </div>
+
+            <div class="hotel-button-date">
+              <p class="date-hotel">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 12 August,
+                2020
+              </p>
+              <button class="btn hotel-button">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-items">
+          <img src="imgs/2-medium.jpg" alt="" class="hotel-image" />
+          <div class="hotel-info">
+            <p class="hotel-name">Centrally located office</p>
+            <p class="hotel-location">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>1052 W 91st St,
+              Los Angeles, CA 90044, USA
+            </p>
+            <p class="hotel-price">$6,400</p>
+            <div class="hotel-features">
+              <p class="features-hotel">Property Size</p>
+              <p class="features-hotel">Bedrooms</p>
+              <p class="features-hotel">Bathrooms</p>
+              <p class="features-hotel">Garages</p>
+              <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+              <p class="features-hotel-2 f-2">2</p>
+              <p class="features-hotel-2 f-3">2</p>
+              <p class="features-hotel-2 f-4">1</p>
+            </div>
+
+            <div class="hotel-button-date">
+              <p class="date-hotel">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 12 August,
+                2020
+              </p>
+              <button class="btn hotel-button">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-items">
+          <img src="imgs/3-medium.jpg" alt="" class="hotel-image" />
+          <div class="hotel-info">
+            <p class="hotel-name">Comfortable family house</p>
+            <p class="hotel-location">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>3rd Ave & James
+              St, Seattle, WA 98104, USA
+            </p>
+            <p class="hotel-price">$2,550,000</p>
+            <div class="hotel-features">
+              <p class="features-hotel">Property Size</p>
+              <p class="features-hotel">Bedrooms</p>
+              <p class="features-hotel">Bathrooms</p>
+              <p class="features-hotel">Garages</p>
+              <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+              <p class="features-hotel-2 f-2">2</p>
+              <p class="features-hotel-2 f-3">2</p>
+              <p class="features-hotel-2 f-4">1</p>
+            </div>
+
+            <div class="hotel-button-date">
+              <p class="date-hotel">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 12 August,
+                2020
+              </p>
+              <button class="btn hotel-button">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-items">
+          <img src="imgs/4-medium.jpg" alt="" class="hotel-image" />
+          <div class="hotel-info">
+            <p class="hotel-name">Spacious and warm flat</p>
+            <p class="hotel-location">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              55 W Jackson Blvd, Chicago, IL 60604, USA
+            </p>
+            <p class="hotel-price">$1,300,000</p>
+            <div class="hotel-features">
+              <p class="features-hotel">Property Size</p>
+              <p class="features-hotel">Bedrooms</p>
+              <p class="features-hotel">Bathrooms</p>
+              <p class="features-hotel">Garages</p>
+              <p class="features-hotel-2 f-1">3281ft<sup>2</sup></p>
+              <p class="features-hotel-2 f-2">2</p>
+              <p class="features-hotel-2 f-3">2</p>
+              <p class="features-hotel-2 f-4">1</p>
+            </div>
+
+            <div class="hotel-button-date">
+              <p class="date-hotel">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 12 August,
+                2020
+              </p>
+              <button class="btn hotel-button">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="footer-elements">
+        <h2 class="heading-para">HouseKey</h2>
+        <p class="footer-para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+          perspiciatis cupiditate numquam odio explicabo accusantium deserunt
+          incidunt.
+        </p>
+        <p class="details-info"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> 2903 Avenue Z, Brooklyn, NY</p>
+        <p class="details-info"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+          (+100) 123 456 7890</p>
+        <p class="details-info"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+          contact@housekey.com</p>
+        <p class="details-info"><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+          Mon - Sun / 9:00AM - 8:00PM</p>
+      </div>
+      <div class="footer-elements">
+        <h2 class="heading-para">Feedback</h2>
+        <p class="footer-para">
+          We Want your feedback about everything.
+        </p>  
+        <div class="inputs-feedback">
+        <input type="text" class="input-feedback" placeholder="Email">
+        <input type="text" class="input-feedback" placeholder="Message for us">
+        <button class="btn feedback" type="submit" value="submit">Submit</button>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
